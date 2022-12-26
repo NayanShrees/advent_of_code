@@ -23,4 +23,9 @@ fn solve_days(example: bool) {
         days::day_1::part_1(&input);
         days::day_1::part_2(&input, TOP_N_ELVES);
     }
+    {
+        let input: String = read_file(2, example);
+        days::day_2::part_1(&input);
+        days::day_2::part_2(&input);
+    }
 }

@@ -13,7 +13,7 @@ fn sum_calories(input: &String) -> Vec<i32> {
 pub fn part_1(input: &String) -> i32 {
     let calories: Vec<i32> = sum_calories(input);
     let max_calories: i32 = *calories.iter().max().unwrap();
-    println!("The highest amount of calories carried by an elf is {max_calories}!");
+    println!("Day 1, part 1: The highest amount of calories carried by an elf is {max_calories}!");
     return max_calories;
 }
 
@@ -23,7 +23,7 @@ pub fn part_2(input: &String, top_n: i32) -> i32 {
     calories.reverse();
     let top_n_calories: i32 = calories.iter().take(top_n as usize).sum();
     println!(
-        "The total amount of calories the top {top_n} elves are carrying is {top_n_calories}!"
+        "Day 1, part 2: The total amount of calories the top {top_n} elves are carrying is {top_n_calories}!"
     );
     return top_n_calories;
 }
