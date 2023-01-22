@@ -34,4 +34,9 @@ fn solve_days(example: bool) {
         days::day_3::part_1(&input);
         days::day_3::part_2(&input, GROUP_SIZE);
     }
+    {
+        let input: String = read_file(4, example);
+        days::day_4::part_1(&input);
+        days::day_4::part_2(&input);
+    }
 }
