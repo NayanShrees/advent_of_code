@@ -28,4 +28,10 @@ fn solve_days(example: bool) {
         days::day_2::part_1(&input);
         days::day_2::part_2(&input);
     }
+    {
+        const GROUP_SIZE: i32 = 3;
+        let input: String = read_file(3, example);
+        days::day_3::part_1(&input);
+        days::day_3::part_2(&input, GROUP_SIZE);
+    }
 }
